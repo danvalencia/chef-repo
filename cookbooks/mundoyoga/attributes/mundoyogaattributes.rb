@@ -5,4 +5,4 @@
 
 # Surfrider Project Packages
 
-default[:mundoyoga][:required][:packages] = %w{libxml2 libxml2-dev mysql-client mysql-admin mysql-dev mysql-server imagemagick}
+default[:mundoyoga][:required][:packages] = %w{libxml2 libxml2-dev mysql-client mysql-admin mysql-server imagemagick}
