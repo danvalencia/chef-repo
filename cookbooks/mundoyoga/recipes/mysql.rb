@@ -12,7 +12,10 @@ node[:mundoyoga][:required][:packages].each do |p|
 end
 
 #enable and start mysqld on system boot
-service "mysqld" do
-  supports :status => true, :restart => true
-  action [ :enable, :start ]
+service "mysql" do
+  restart_command "restart mysql"
+  stop_command "stop mysql"
+  start_command "start mysql"
+  supports :status => true, :restart => true, :reload => true
+  action :nothing
 end
