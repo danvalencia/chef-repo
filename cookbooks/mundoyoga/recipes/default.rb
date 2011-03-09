@@ -8,4 +8,5 @@
 #
 #application packgage installation
 
+include_recipe "nginx::default"
 include_recipe "mysql::server"
